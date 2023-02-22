@@ -17,6 +17,8 @@ jobs:
           stack: "container"
           region: "us"
         env:
+          HD_HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
+          HD_HEROKU_APP_NAME: ${{secrets.HEROKU_APP_NAME}}
           HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
           HD_OWNER_ID: ${{secrets.OWNER_ID}}
           HD_TELEGRAM_API: ${{secrets.TELEGRAM_API}}
