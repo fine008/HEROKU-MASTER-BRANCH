@@ -64,7 +64,7 @@ class _BotCommands:
         self.RssUnSubCommand = getCommand(f'RSSUNSUB_COMMAND', f'rssunsub{CMD_SUFFIX}')
         self.RssSettingsCommand = getCommand(f'RSSSET_COMMAND', f'rssset{CMD_SUFFIX}')
         self.WayBackCommand = getCommand(f'WAYBACK_COMMAND', f'wayback{CMD_SUFFIX}')
-        self.WayBackCommand = getCommand(f'USAGE_COMMAND', f'usage{CMD_SUFFIX}')
+        self.UsageCommand = getCommand(f'USAGE_COMMAND', f'usage{CMD_SUFFIX}')
         self.AddleechlogCommand = getCommand(f'ADDLEECHLOG_CMD', f'addleechlog{CMD_SUFFIX}')
         self.RmleechlogCommand = getCommand(f'RMLEECHLOG_CMD', f'rmleechlog{CMD_SUFFIX}')
         self.SelectCategory = getCommand(f'CATSEL_CMD', f'catsel{CMD_SUFFIX}')
