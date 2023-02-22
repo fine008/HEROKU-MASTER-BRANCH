@@ -1,15 +1,7 @@
 import math
 import requests
+srun("pip install heroku3", capture_output=False, shell=True)
 import heroku3
-try: import heroku3
-except ModuleNotFoundError: srun("pip install heroku3", capture_output=False, shell=True)
-try: import heroku3
-except Exception as f:
-    LOGGER.warning("heroku3 cannot imported. add to your deployer requirements.txt file.")
-    LOGGER.warning(f)
-    HEROKU_APP_NAME = None
-    HEROKU_API_KEY = None
-
 from bot import dispatcher, HEROKU_APP_NAME, HEROKU_API_KEY
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.filters import CustomFilters
