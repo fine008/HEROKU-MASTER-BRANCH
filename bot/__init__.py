@@ -680,6 +680,14 @@ UPDATE_PACKAGES = environ.get('UPDATE_PACKAGES', '')
 if len(UPDATE_PACKAGES) == 0:
     UPDATE_PACKAGES = 'False'
 
+HEROKU_APP_NAME = environ.get('HEROKU_APP_NAME', '')
+if len(HEROKU_APP_NAME) == 0:
+    HEROKU_APP_NAME = ''
+
+HEROKU_API_KEY = environ.get('HEROKU_API_KEY', '')
+if len(HEROKU_API_KEY) == 0:
+    HEROKU_API_KEY = ''
+
 
 config_dict = {'ANILIST_ENABLED': ANILIST_ENABLED,
                'AS_DOCUMENT': AS_DOCUMENT,
@@ -713,8 +721,9 @@ config_dict = {'ANILIST_ENABLED': ANILIST_ENABLED,
                'EQUAL_SPLITS': EQUAL_SPLITS,
                'EXTENSION_FILTER': EXTENSION_FILTER,
                'EMOJI_THEME': EMOJI_THEME,
-               'GDRIVE_ID': GDRIVE_ID,               
-               'IGNORE_PENDING_REQUESTS': IGNORE_PENDING_REQUESTS,
+               'GDRIVE_ID': GDRIVE_ID'
+               'HEROKU_APP_NAME': HEROKU_APP_NAME,
+               'HEROKU_API_KEY': HEROKU_API_KEY,               'IGNORE_PENDING_REQUESTS': IGNORE_PENDING_REQUESTS,
                'INCOMPLETE_TASK_NOTIFIER': INCOMPLETE_TASK_NOTIFIER,
                'INDEX_URL': INDEX_URL,
                'IS_TEAM_DRIVE': IS_TEAM_DRIVE,
