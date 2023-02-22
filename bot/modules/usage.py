@@ -1,6 +1,5 @@
 import math
 import requests
-srun("pip install heroku3", capture_output=False, shell=True)
 import heroku3
 from bot import dispatcher, HEROKU_APP_NAME, HEROKU_API_KEY
 from bot.helper.telegram_helper.bot_commands import BotCommands
